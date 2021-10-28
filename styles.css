@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	background-color: #555;
+	height: 100vh;
+}
+
+.modal {
+	height: 80vh;
+	width: 900px;
+	max-width: 80%;
+	background-color: white;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid black;
+}
+
+.header > span {
+	font-size: 1.5rem;
+	padding-top: 1rem;
+}
+
+.header > button {
+	border: none;
+	font-size: 1.5rem;
+	align-self: flex-start;
+	margin: 0;
+	padding: 0;
+	padding-top: 0.5rem;
+	cursor: pointer;
+	background: none;
+	font-weight: bold;
+}
+
+.main-body {
+	padding: 1rem;
+	flex-grow: 1;
+	overflow: auto;
+}
+
+.footer {
+	display: flex;
+	justify-content: flex-end;
+	border-top: 1px solid black;
+	padding: 0.5rem;
+}
+
+.footer .btn {
+	margin-right: 0.5rem;
+}
+
+.footer .btn:last-child {
+	margin-right: 0;
+}
+
+.btn {
+	padding: 0.5em 1em;
+	cursor: pointer;
+	border-radius: 0.3em;
+	font-size: inherit;
+	color: white;
+	border: none;
+}
+
+.btn.btn-primary {
+	background-color: #1ca;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+	background-color: #0a8;
+}
+
+.btn.btn-danger {
+	background-color: #c33;
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus {
+	background-color: #a11;
+}
